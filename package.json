@@ -1,6 +1,6 @@
 {
   "name": "@infisical/mcp",
-  "version": "0.0.0",
+  "version": "0.0.23-patch1",
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "files": [
@@ -26,7 +26,8 @@
   "description": "Official Infisical MCP Server",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "tsup src/index.ts --out-dir dist --format cjs --tsconfig tsconfig.json --no-splitting"
+    "build": "tsup src/index.ts --out-dir dist --format cjs --tsconfig tsconfig.json --no-splitting",
+    "prepare": "npm run build"
   },
 
   "overrides": {
